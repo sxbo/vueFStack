@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import routes from './router/router';
 
+import store from './store/'
+import './style/common'
 import './config/rem'
 
 
@@ -12,5 +14,6 @@ const router = new VueRouter({
 })
 
 new Vue({
-    router
+    router,
+    store
 }).$mount('#app');
